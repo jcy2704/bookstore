@@ -7,12 +7,32 @@ import reducer from './reducers';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(reducer);
+const randomInt = (minim, maxim) => {
+  const min = Math.ceil(minim);
+  const max = Math.floor(maxim);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
-ReactDOM.render(
+const initialState = [
+  { id: randomInt(1, 100), title: 'Book1', category: 'Horror' },
+  { id: randomInt(1, 100), title: 'Book2', category: 'Action' },
+  { id: randomInt(1, 100), title: 'Book3', category: 'Biography' },
+  { id: randomInt(1, 100), title: 'Book4', category: 'History' },
+  { id: randomInt(1, 100), title: 'Book5', category: 'Kids' },
+  { id: randomInt(1, 100), title: 'Book6', category: 'Learning' },
+  { id: randomInt(1, 100), title: 'Book7', category: 'Sci-Fi' },
+];
+
+const store = createStore(reducer, { books: initialState });
+
+const wrappedApp = (
   <Provider store={store}>
     <App />
-  </Provider>,
+  </Provider>
+);
+
+ReactDOM.render(
+  wrappedApp,
   document.getElementById('root'),
 );
 
