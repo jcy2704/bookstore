@@ -1,6 +1,6 @@
-# Bookstore Setup
+# Bookstore Milestone 2
 
-Setup phase before starting to build the project.
+Creating presentational components, container components, reducers, actions, and Redux store.
 
 ## Built With
 
