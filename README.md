@@ -1,6 +1,6 @@
-# Bookstore Milestone 2
+# Bookstore Milestone 3
 
-Creating presentational components, container components, reducers, actions, and Redux store.
+Creating functions to add and remove books from the bookstore list.
 
 ## Built With
 
@@ -13,8 +13,6 @@ Creating presentational components, container components, reducers, actions, and
 [Demo](https://radiant-shore-25643.herokuapp.com/)
 
 ## Getting Started
-
-**This is the setup phase.**
 
 To get a local copy up and running follow these simple example steps.
 
