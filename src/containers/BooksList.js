@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -14,27 +15,31 @@ const BooksList = ({
 
   const filteredBooks = () => {
     if (filter === 'All') {
-      return books;
+      return books.sort((a, b) => a.id - b.id);
     }
-    return books.filter(book => book.category === filter);
+    return books.filter(book => book.category === filter).sort((a, b) => a.id - b.id);
   };
 
   return (
     <>
       <CategoryFilter handleFilter={changeCategory} />
       <table>
-        <tr>
-          <th>
-            Book ID
-          </th>
-          <th>
-            Title
-          </th>
-          <th>
-            Category
-          </th>
-        </tr>
-        {filteredBooks().map(book => <Book key={book.id} book={book} delete={handleRemoveBook} />)}
+        <thead>
+          <tr>
+            <th>
+              Book ID
+            </th>
+            <th>
+              Title
+            </th>
+            <th>
+              Category
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredBooks().map(book => <Book key={book.id} book={book} delete={handleRemoveBook} />)}
+        </tbody>
       </table>
     </>
   );

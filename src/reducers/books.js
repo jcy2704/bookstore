@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 export const randInt = (minim, maxim) => {
@@ -10,7 +11,7 @@ export default (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [
-        ...state, { id: randInt(1, 100), title: action.book.title, category: action.book.category },
+        ...state, { id: randInt(1, 1000), title: action.book.title, category: action.book.category },
       ];
     case REMOVE_BOOK:
       return state.filter(book => book.id !== action.book.id);
