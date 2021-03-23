@@ -31,11 +31,11 @@ const BooksForm = ({ bookCreator }) => {
   return (
     <>
       <form>
-        <label>
+        <label htmlFor="titleInput">
           Book Title
           <input onChange={handleChange} id="titleInput" type="text" value={bookInfo.title} />
         </label>
-        <label>
+        <label htmlFor="categoryInput">
           Category
           <select id="categoryInput" onChange={handleChange} value={bookInfo.category}>
             {categories.map(cat => (
