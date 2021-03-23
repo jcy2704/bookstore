@@ -3,22 +3,26 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook } from '../actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({ books, delete: handleRemoveBook }) => (
-  <table>
-    <tr>
-      <th>
-        Book ID
-      </th>
-      <th>
-        Title
-      </th>
-      <th>
-        Category
-      </th>
-    </tr>
-    {books.map(book => <Book key={book} book={book} delete={handleRemoveBook} />)}
-  </table>
+  <>
+    <CategoryFilter />
+    <table>
+      <tr>
+        <th>
+          Book ID
+        </th>
+        <th>
+          Title
+        </th>
+        <th>
+          Category
+        </th>
+      </tr>
+      {books.map(book => <Book key={book.id} book={book} delete={handleRemoveBook} />)}
+    </table>
+  </>
 );
 
 BooksList.propTypes = {
@@ -30,9 +34,10 @@ BooksList.propTypes = {
     }),
   ).isRequired,
   delete: PropTypes.func.isRequired,
+  // filter: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({ books: state.books });
+const mapStateToProps = state => ({ books: state.books, filter: state.filter });
 
 const mapDispatchToProps = dispatch => ({
   delete: book => dispatch(removeBook(book)),

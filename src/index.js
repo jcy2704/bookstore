@@ -18,7 +18,7 @@ const initialState = [
   { id: randInt(1, 100), title: 'Book7', category: 'Sci-Fi' },
 ];
 
-const store = createStore(reducer, { books: initialState });
+const store = createStore(reducer, { books: initialState, filter: 'All' });
 
 const wrappedApp = (
   <Provider store={store}>
