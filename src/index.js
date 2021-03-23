@@ -4,7 +4,7 @@ import './styles/index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducers';
-import App from './components/App';
+import Routes from './components/Routes';
 import { randInt } from './reducers/books';
 import reportWebVitals from './reportWebVitals';
 
@@ -36,7 +36,7 @@ const store = createStore(reducer, { books: initialState });
 
 const wrappedApp = (
   <Provider store={store}>
-    <App />
+    <Routes />
   </Provider>
 );
 

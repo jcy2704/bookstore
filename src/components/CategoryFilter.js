@@ -7,7 +7,7 @@ const CategoryFilter = ({ handleFilter }) => {
   return (
     <>
       <label htmlFor="filterSelect">
-        Category Filter
+        Categories
         <select id="filterSelect" onChange={handleFilter}>
           {categories.map(cat => (
             <option key={cat} value={cat}>{cat}</option>
