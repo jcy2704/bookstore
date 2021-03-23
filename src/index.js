@@ -32,7 +32,7 @@ const initialState = [
   { id: randInt(1, 1000), title: 'Children of Time', category: 'Sci-Fi' },
 ];
 
-const store = createStore(reducer, { books: initialState, filter: 'All' });
+const store = createStore(reducer, { books: initialState });
 
 const wrappedApp = (
   <Provider store={store}>

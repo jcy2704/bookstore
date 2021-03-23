@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,11 +6,11 @@ const CategoryFilter = ({ handleFilter }) => {
 
   return (
     <>
-      <label>
+      <label htmlFor="filterSelect">
         Category Filter
-        <select onChange={handleFilter}>
-          {categories.map((cat, index) => (
-            <option key={index} value={cat}>{cat}</option>
+        <select id="filterSelect" onChange={handleFilter}>
+          {categories.map(cat => (
+            <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>
       </label>
