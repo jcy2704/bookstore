@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
+:root {
+  --azure: #0290ff;
+  --gray: #e8e8e8;
+  --black: #121212;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +15,8 @@
 body {
   background-color: #fafafa;
   font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -17,4 +25,64 @@ body {
 
 .p-100 {
   padding: 0 100px;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.just-c {
+  justify-content: center;
+}
+
+.nav {
+  padding: 30px 100px;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 2px solid var(--gray);
+  margin-bottom: calc(38px - 15px);
+}
+
+.title {
+  color: var(--azure);
+  font-size: 30px;
+}
+
+.right-cont {
+  margin-left: 50px;
+}
+
+.book-header-title {
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.9px;
+  color: var(--black);
+}
+
+.category-header-title {
+  color: var(--black);
+  opacity: 0.5;
+  font-size: 15px;
+  letter-spacing: 1.9;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.prof {
+  width: 50px;
+  height: 50px;
+  border: solid 1px var(--gray);
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: 23px;
+}
+
+.prof svg {
+  font-size: 1.25em;
+}
+
+.prof svg path {
+  fill: var(--azure);
 }

@@ -6,8 +6,8 @@ const CategoryFilter = ({ handleFilter }) => {
 
   return (
     <>
-      <label htmlFor="filterSelect">
-        Categories
+      <label className="flex align-c" htmlFor="filterSelect">
+        <span className="category-header-title">Categories</span>
         <select id="filterSelect" onChange={handleFilter}>
           {categories.map(cat => (
             <option key={cat} value={cat}>{cat}</option>
