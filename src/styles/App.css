@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
   --azure: #0290ff;
   --gray: #e8e8e8;
   --black: #121212;
+  --blue: #4386bf;
 }
 
 * {
@@ -17,6 +18,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+li {
+  list-style: none;
 }
 
 .flex {
@@ -40,12 +45,13 @@ body {
   background-color: #fff;
   position: relative;
   border-bottom: 2px solid var(--gray);
-  margin-bottom: calc(38px - 15px);
+  margin-bottom: calc(38px);
 }
 
 .title {
   color: var(--azure);
   font-size: 30px;
+  cursor: pointer;
 }
 
 .right-cont {
@@ -58,6 +64,7 @@ body {
   font-size: 15px;
   letter-spacing: 1.9px;
   color: var(--black);
+  cursor: pointer;
 }
 
 .category-header-title {
@@ -69,6 +76,10 @@ body {
   margin-right: 10px;
 }
 
+#filterSelect {
+  cursor: pointer;
+}
+
 .prof {
   width: 50px;
   height: 50px;
@@ -77,6 +88,7 @@ body {
   position: absolute;
   right: 100px;
   bottom: 23px;
+  cursor: pointer;
 }
 
 .prof svg {
@@ -85,4 +97,58 @@ body {
 
 .prof svg path {
   fill: var(--azure);
+}
+
+.book-card {
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: white;
+  margin: 15px 100px;
+  padding: 32px 147px 26px 27px;
+  border: solid 1px var(--gray);
+  border-radius: 4px;
+}
+
+.book-cat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 4px;
+}
+
+.book-title {
+  font-size: 22px;
+}
+
+.book-id {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.lower-btns {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.lower-btns p {
+  cursor: pointer;
+}
+
+.rmv-btn {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Roboto Slab', sans-serif;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.btn-divider {
+  width: 2px;
+  height: 24px;
+  margin: 0 15px;
+  border: solid 1px var(--gray);
 }
