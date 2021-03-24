@@ -12,12 +12,14 @@ const Navbar = ({ changeCat }) => {
   return (
     <>
       <header>
-        <nav>
+        <nav className="p-100 flex">
           <h1 className="title">
             Bookstore CMS
           </h1>
-          <p className="book-header-title">Books</p>
-          <CategoryFilter handleFilter={changeCategory} />
+          <div className="flex">
+            <p className="book-header-title">Books</p>
+            <CategoryFilter handleFilter={changeCategory} />
+          </div>
         </nav>
       </header>
     </>
