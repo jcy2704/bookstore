@@ -42,12 +42,19 @@ li {
   justify-content: center;
 }
 
+.just-sb {
+  justify-content: space-between;
+}
+
+.pos-rel {
+  position: relative;
+}
+
 .nav {
   padding: 30px 100px;
   background-color: #fff;
-  position: relative;
   border-bottom: 2px solid var(--gray);
-  margin-bottom: calc(38px);
+  margin-bottom: calc(38px - 15px);
 }
 
 .title {
@@ -104,7 +111,7 @@ li {
 .book-card {
   font-family: 'Roboto Slab', sans-serif;
   background-color: white;
-  margin: 15px 100px;
+  margin: 15px 0;
   padding: 32px 147px 26px 27px;
   border: solid 1px var(--gray);
   border-radius: 4px;
@@ -227,5 +234,67 @@ li {
   font-family: 'Roboto Slab';
   font-weight: 300;
   letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.books-cards-cont {
+  max-height: 73vh;
+  overflow-y: scroll;
+  margin: 0 100px;
+}
+.books-cards-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.form-divider {
+  height: 2px;
+  border: 1px solid var(--gray);
+  margin: 35px 100px;
+}
+
+.form {
+  margin-bottom: 100px;
+}
+
+.add-new-book {
+  font-size: 20px;
+  letter-spacing: -0.18px;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+#titleInput {
+  padding: 10px 10px;
+  width: 100%;
+  margin-right: 30px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+#categoryInput {
+  padding: 10px 10px;
+  width: 50%;
+  appearance: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  width: 30%;
+  margin-left: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--azure);
+  border-radius: 3px;
+  border: 1px solid var(--gray);
   cursor: pointer;
 }

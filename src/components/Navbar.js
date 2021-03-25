@@ -14,7 +14,7 @@ const Navbar = ({ changeCat }) => {
   return (
     <>
       <header>
-        <nav className="p-100 nav flex">
+        <nav className="p-100 nav pos-rel flex">
           <h1 className="title">
             Bookstore CMS
           </h1>

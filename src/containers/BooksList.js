@@ -20,6 +20,8 @@ const BooksList = ({
       <ul className="books-cards-cont">
         {filteredBooks().map(book => <Book key={book.id} book={book} delete={handleRemoveBook} />)}
       </ul>
+
+      <div className="form-divider" />
     </>
   );
 };
