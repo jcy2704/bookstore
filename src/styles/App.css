@@ -80,7 +80,7 @@ li {
   color: var(--black);
   opacity: 0.5;
   font-size: 15px;
-  letter-spacing: 1.9;
+  letter-spacing: 1.9px;
   text-transform: uppercase;
   margin-right: 10px;
 }
@@ -231,7 +231,7 @@ li {
   padding: 7px 24px;
   border: 0;
   color: white;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -242,6 +242,7 @@ li {
   overflow-y: scroll;
   margin: 0 100px;
 }
+
 .books-cards-cont::-webkit-scrollbar {
   display: none;
 }
@@ -259,7 +260,7 @@ li {
 .add-new-book {
   font-size: 20px;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
   margin-bottom: 20px;
 }
 
