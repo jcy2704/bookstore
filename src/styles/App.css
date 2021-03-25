@@ -5,6 +5,8 @@
   --gray: #e8e8e8;
   --black: #121212;
   --blue: #4386bf;
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
 }
 
 * {
@@ -106,6 +108,7 @@ li {
   padding: 32px 147px 26px 27px;
   border: solid 1px var(--gray);
   border-radius: 4px;
+  position: relative;
 }
 
 .book-cat {
@@ -151,4 +154,78 @@ li {
   height: 24px;
   margin: 0 15px;
   border: solid 1px var(--gray);
+}
+
+.progress {
+  position: absolute;
+  right: 40%;
+}
+
+.porcentage-oval {
+  background: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.porcentage-oval span {
+  background: #fff;
+  display: block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+
+.porcentage {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+}
+
+.completed {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.divider {
+  width: 2px;
+  height: 70px;
+  border: 1px solid var(--gray);
+  position: absolute;
+  right: 400px;
+}
+
+.chapter-cont {
+  position: absolute;
+  right: 180px;
+}
+
+.current-ch {
+  font-size: 13px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 7px;
+}
+
+.chapter {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.updt-progress {
+  background-color: var(--azure);
+  border-radius: 3px;
+  padding: 7px 24px;
+  border: 0;
+  color: white;
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
