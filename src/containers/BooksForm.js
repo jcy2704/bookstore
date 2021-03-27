@@ -34,13 +34,13 @@ const BooksForm = ({ bookCreator }) => {
         <h2 className="add-new-book">ADD NEW BOOK</h2>
         <div className="flex just-sb">
           <input onChange={handleChange} id="titleInput" type="text" value={bookInfo.title} placeholder="Book Title" />
-          <select id="categoryInput" onChange={handleChange} value={bookInfo.category}>
+          <select id="categoryInput" className="pointer" onChange={handleChange} value={bookInfo.category}>
             <option className="categories-option" value="" disabled selected>Categories</option>
             {categories.map(cat => (
               <option key={cat} value={cat}>{cat}</option>
             ))}
           </select>
-          <button className="add-btn" onClick={handleSubmit} type="button">Add Book</button>
+          <button className="add-btn pointer" onClick={handleSubmit} type="button">Add Book</button>
         </div>
       </form>
     </>

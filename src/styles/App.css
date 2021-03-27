@@ -50,6 +50,18 @@ li {
   position: relative;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
 .nav {
   padding: 30px 100px;
   background-color: #fff;
@@ -60,7 +72,6 @@ li {
 .title {
   color: var(--azure);
   font-size: 30px;
-  cursor: pointer;
 }
 
 .right-cont {
@@ -73,20 +84,14 @@ li {
   font-size: 15px;
   letter-spacing: 1.9px;
   color: var(--black);
-  cursor: pointer;
 }
 
 .category-header-title {
   color: var(--black);
-  opacity: 0.5;
   font-size: 15px;
   letter-spacing: 1.9px;
   text-transform: uppercase;
   margin-right: 10px;
-}
-
-#filterSelect {
-  cursor: pointer;
 }
 
 .prof {
@@ -97,7 +102,6 @@ li {
   position: absolute;
   right: 100px;
   bottom: 23px;
-  cursor: pointer;
 }
 
 .prof svg {
@@ -121,7 +125,6 @@ li {
 .book-cat {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  opacity: 0.5;
   margin-bottom: 4px;
 }
 
@@ -130,7 +133,6 @@ li {
 }
 
 .book-id {
-  font-weight: 300;
   font-size: 14px;
   color: var(--blue);
   margin-bottom: 20px;
@@ -139,11 +141,6 @@ li {
 .lower-btns {
   color: var(--blue);
   font-size: 14px;
-  font-weight: 300;
-}
-
-.lower-btns p {
-  cursor: pointer;
 }
 
 .rmv-btn {
@@ -152,8 +149,6 @@ li {
   font-family: 'Roboto Slab', sans-serif;
   color: var(--blue);
   font-size: 14px;
-  font-weight: 300;
-  cursor: pointer;
 }
 
 .btn-divider {
@@ -195,7 +190,6 @@ li {
 .completed {
   font-family: 'Montserrat', sans-serif;
   color: var(--black);
-  opacity: 0.5;
   font-size: 14px;
 }
 
@@ -214,14 +208,11 @@ li {
 
 .current-ch {
   font-size: 13px;
-  font-weight: 300;
-  opacity: 0.5;
   margin-bottom: 7px;
 }
 
 .chapter {
   font-size: 16px;
-  font-weight: 300;
   margin-bottom: 24px;
 }
 
@@ -232,13 +223,11 @@ li {
   border: 0;
   color: white;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: 300;
   letter-spacing: 0.5px;
-  cursor: pointer;
 }
 
 .books-cards-cont {
-  max-height: 73vh;
+  max-height: 75vh;
   overflow-y: scroll;
   margin: 0 100px;
 }
@@ -282,7 +271,6 @@ li {
   font-family: 'Montserrat', sans-serif;
   border: 1px solid var(--gray);
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .add-btn {
@@ -297,5 +285,4 @@ li {
   background-color: var(--azure);
   border-radius: 3px;
   border: 1px solid var(--gray);
-  cursor: pointer;
 }

@@ -15,14 +15,14 @@ const Navbar = ({ changeCat }) => {
     <>
       <header>
         <nav className="p-100 nav pos-rel flex">
-          <h1 className="title">
+          <h1 className="title pointer">
             Bookstore CMS
           </h1>
           <div className="right-cont align-c flex">
-            <p className="book-header-title">Books</p>
+            <p className="book-header-title pointer">Books</p>
             <CategoryFilter handleFilter={changeCategory} />
           </div>
-          <div className="prof flex align-c just-c">
+          <div className="prof pointer flex align-c just-c">
             <FontAwesomeIcon icon={faUser} />
           </div>
         </nav>
