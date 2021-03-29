@@ -1,4 +1,288 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --azure: #0290ff;
+  --gray: #e8e8e8;
+  --black: #121212;
+  --blue: #4386bf;
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
+}
+
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.p-100 {
+  padding: 0 100px;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.just-c {
+  justify-content: center;
+}
+
+.just-sb {
+  justify-content: space-between;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.nav {
+  padding: 30px 100px;
+  background-color: #fff;
+  border-bottom: 2px solid var(--gray);
+  margin-bottom: calc(38px - 15px);
+}
+
+.title {
+  color: var(--azure);
+  font-size: 30px;
+}
+
+.right-cont {
+  margin-left: 50px;
+}
+
+.book-header-title {
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.9px;
+  color: var(--black);
+}
+
+.category-header-title {
+  color: var(--black);
+  font-size: 15px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.prof {
+  width: 50px;
+  height: 50px;
+  border: solid 1px var(--gray);
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: 23px;
+}
+
+.prof svg {
+  font-size: 1.25em;
+}
+
+.prof svg path {
+  fill: var(--azure);
+}
+
+.book-card {
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: white;
+  margin: 15px 0;
+  padding: 32px 147px 26px 27px;
+  border: solid 1px var(--gray);
+  border-radius: 4px;
+  position: relative;
+}
+
+.book-cat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.book-title {
+  font-size: 22px;
+}
+
+.book-id {
+  font-size: 14px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.lower-btns {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.rmv-btn {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Roboto Slab', sans-serif;
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.btn-divider {
+  width: 2px;
+  height: 24px;
+  margin: 0 15px;
+  border: solid 1px var(--gray);
+}
+
+.progress {
+  position: absolute;
+  right: 40%;
+}
+
+.porcentage-oval {
+  background: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.porcentage-oval span {
+  background: #fff;
+  display: block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+
+.porcentage {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+}
+
+.completed {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black);
+  font-size: 14px;
+}
+
+.divider {
+  width: 2px;
+  height: 70px;
+  border: 1px solid var(--gray);
+  position: absolute;
+  right: 400px;
+}
+
+.chapter-cont {
+  position: absolute;
+  right: 180px;
+}
+
+.current-ch {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.chapter {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.updt-progress {
+  background-color: var(--azure);
+  border-radius: 3px;
+  padding: 7px 24px;
+  border: 0;
+  color: white;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.books-cards-cont {
+  max-height: 75vh;
+  overflow-y: scroll;
+  margin: 0 100px;
+}
+
+.books-cards-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.form-divider {
+  height: 2px;
+  border: 1px solid var(--gray);
+  margin: 35px 100px;
+}
+
+.form {
+  margin-bottom: 100px;
+}
+
+.add-new-book {
+  font-size: 20px;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+#titleInput {
+  padding: 10px 10px;
+  width: 100%;
+  margin-right: 30px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+#categoryInput {
+  padding: 10px 10px;
+  width: 50%;
+  appearance: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  width: 30%;
+  margin-left: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--azure);
+  border-radius: 3px;
+  border: 1px solid var(--gray);
 }

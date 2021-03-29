@@ -1,6 +1,6 @@
-# Bookstore Milestone 3
+# Bookstore
 
-Creating functions to add and remove books from the bookstore list.
+You read many books, but you can't remember which chapter you were? Well, Bookstore is a web application where you can add the books you are reading and maintain record of the pages and chapter you are in.
 
 ## Built With
 
@@ -114,7 +114,7 @@ And there you go! You have your app deployed to Heroku.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jcy2704/calculator/issues).
+Feel free to check the [issues page](https://github.com/jcy2704/bookstore/issues).
 
 ## Show your support
 

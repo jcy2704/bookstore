@@ -26,24 +26,22 @@ const BooksForm = ({ bookCreator }) => {
     }
   };
 
-  const categories = ['', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
     <>
-      <form>
-        <label htmlFor="titleInput">
-          Book Title
-          <input onChange={handleChange} id="titleInput" type="text" value={bookInfo.title} />
-        </label>
-        <label htmlFor="categoryInput">
-          Category
-          <select id="categoryInput" onChange={handleChange} value={bookInfo.category}>
+      <form className="p-100 form">
+        <h2 className="add-new-book">ADD NEW BOOK</h2>
+        <div className="flex just-sb">
+          <input onChange={handleChange} id="titleInput" type="text" value={bookInfo.title} placeholder="Book Title" />
+          <select id="categoryInput" className="pointer" onChange={handleChange} value={bookInfo.category}>
+            <option className="categories-option" value="" disabled selected>Categories</option>
             {categories.map(cat => (
               <option key={cat} value={cat}>{cat}</option>
             ))}
           </select>
-        </label>
-        <button onClick={handleSubmit} type="button">Add Book</button>
+          <button className="add-btn pointer" onClick={handleSubmit} type="button">Add Book</button>
+        </div>
       </form>
     </>
   );
